@@ -12,7 +12,7 @@ ytruth = form
 
 dat = tibble(x, y)
         
-dat %>% ggplot(aes(x=x,
+actual = dat %>% ggplot(aes(x=x,
                    y=y))+
         geom_point()+
         theme_bw() +
@@ -44,3 +44,5 @@ plot_smoother <- function(deg_free) {
 }
 
 plot = ( plot_smoother(1)+ggtitle("Linear") + plot_smoother(3)+ plot_smoother(100) )
+
+plot

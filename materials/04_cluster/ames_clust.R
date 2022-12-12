@@ -4,7 +4,6 @@ library(tidymodels)
 tidymodels_prefer()
 
 
-
 # read in ames training
 ames_train = fread(here::here("data", "ames_train.csv"))
 
